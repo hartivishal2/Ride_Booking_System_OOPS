@@ -1,19 +1,14 @@
+
 class User:
 
-    def __init__(self):
-        print("\nPlease Enter the Following Details to Proceed!")
-
-        self.user_id = input("Enter User ID: ")
-        self.username = input("Enter Username: ")
-        self.phone = input("Enter Phone Number: ")
-        self.email = input("Enter Email ID: ")
-
-        self.menu()
+    def __init__(self, user_id, username, phone, email):
+        self.user_id = user_id
+        self.username = username
+        self.phone = phone
+        self.email = email
 
     def menu(self):
-
         while True:
-
             num_input = input("""
         ** -- Welcome to our Booking System -- **
 
@@ -21,19 +16,16 @@ class User:
         Press 2 to Update Your Profile
         Press 3 to Exit
 
-        Enter your choice: 
+        Enter your choice:
         """)
 
             if num_input == "1":
                 self.profile()
-
             elif num_input == "2":
                 self.update_profile()
-
             elif num_input == "3":
                 print("\nThank you for using our Booking System!")
                 return
-
             else:
                 print("\nInvalid choice! Please try again.")
 
@@ -53,4 +45,3 @@ class User:
         self.email = input("Enter New Email ID: ")
 
         print("\nProfile updated successfully!")
-
