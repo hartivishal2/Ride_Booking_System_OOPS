@@ -1,4 +1,3 @@
-
 class Vehicle:
 
     def __init__(self):
@@ -43,7 +42,8 @@ class Vehicle:
         Enter 4 to Vehicle Color
         5. Back
         """)
-
+            # so if the variable has something the if condition will run means 1 else if 
+            # entered manually then the variable becomes 0 so the else part will execute
 
             if choice == "1":
                 new_number = input("Enter New Vehicle Number: ").strip()
@@ -89,5 +89,3 @@ class Vehicle:
             else:
                 print("Invalid choice! Please try again.")
 
-vehicle1 = Vehicle()
-vehicle1.vehicle_details()
