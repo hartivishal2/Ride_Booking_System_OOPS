@@ -2,6 +2,7 @@ from user import User
 from vehicle import Vehicle
 from driver import Driver
 from ride import Ride
+from payment import Payment
 
 
 # STEP 1: Create a passenger
@@ -64,3 +65,34 @@ ride1.complete_ride()
 print("\n-.-.-.-.-.- STEP 9: FINAL RIDE STATUS -.-.-.-.-.-")
 ride1.ride_details()
 
+# STEP 10: Create payment
+print("\n-.-.-.-.-.- STEP 10: CREATE PAYMENT -.-.-.-.-.-")
+
+payment1 = Payment(
+    "P101",
+    ride1
+)
+
+print("Payment created successfully!")
+
+
+# STEP 11: Select payment method
+print("\n-.-.-.-.-.- STEP 11: SELECT PAYMENT METHOD -.-.-.-.-.-")
+
+payment1.select_payment_method()
+
+
+# STEP 12: Make payment
+print("\n-.-.-.-.-.- STEP 12: MAKE PAYMENT -.-.-.-.-.-")
+
+payment1.make_payment()
+
+
+# STEP 13: Display payment details
+print("\n-.-.-.-.-.- STEP 13: PAYMENT DETAILS -.-.-.-.-.-")
+
+payment1.payment_details()
+
+
+# Final message
+print("\n-.-.-.-.-.- RIDE BOOKING PROCESS FINISHED -.-.-.-.-.-")

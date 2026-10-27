@@ -23,12 +23,12 @@ class Vehicle:
 
     def vehicle_details(self):
         print("\n-- Vehicle Details --")
-        print(f"Vehicle ID     : {self.vehicle_id}")
+        print(f"Vehicle ID : {self.vehicle_id}")
         print(f"Vehicle Number : {self.vehicle_number}")
-        print(f"Vehicle Type   : {self.vehicle_type}")
-        print(f"Vehicle Model  : {self.vehicle_model}")
-        print(f"Vehicle Color  : {self.vehicle_color}")
-        print(f"Availability   : {'Available' if self.available else 'In Use'}")
+        print(f"Vehicle Type : {self.vehicle_type}")
+        print(f"Vehicle Model : {self.vehicle_model}")
+        print(f"Vehicle Color : {self.vehicle_color}")
+        print(f"Availability : {'Available' if self.available else 'In Use'}")
 
     def update_vehicle(self):
 

@@ -31,19 +31,19 @@ class Ride:
 
     def ride_details(self):
         print("\n-- Ride Details --")
-        print(f"Ride ID      : {self.ride_id}")
-        print(f"Passenger    : {self.user.username}")
-        print(f"Pickup       : {self.pickup}")
-        print(f"Destination  : {self.destination}")
-        print(f"Distance     : {self.distance} km")
-        print(f"Fare         : ₹{self.calculate_fare():.2f}")
-        print(f"Ride Status  : {self.status}")
+        print(f"Ride ID : {self.ride_id}")
+        print(f"Passenger : {self.user.username}")
+        print(f"Pickup  : {self.pickup}")
+        print(f"Destination : {self.destination}")
+        print(f"Distance : {self.distance} km")
+        print(f"Fare : ₹{self.calculate_fare():.2f}")
+        print(f"Ride Status : {self.status}")
 
         if self.driver is not None:
-            print(f"Driver       : {self.driver.username}")
-            print(f"Driver ID    : {self.driver.driver_id}")
+            print(f"Driver : {self.driver.username}")
+            print(f"Driver ID : {self.driver.driver_id}")
         else:
-            print("Driver       : Not Assigned")
+            print("Driver : Not Assigned")
 
 
     def complete_ride(self):

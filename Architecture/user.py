@@ -29,10 +29,10 @@ class User:
 
     def profile(self):
         print("\n-- Profile --")
-        print(f"USER ID   :- {self.user_id}")
-        print(f"USERNAME  :- {self.username}")
-        print(f"PHONE NO  :- {self.phone}")
-        print(f"EMAIL ID  :- {self.email}")
+        print(f"USER ID :- {self.user_id}")
+        print(f"USERNAME :- {self.username}")
+        print(f"PHONE NO :- {self.phone}")
+        print(f"EMAIL ID :- {self.email}")
 
     def update_profile(self):
         print("\n-- Updating the Profile --")

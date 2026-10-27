@@ -32,11 +32,11 @@ class Driver(User):
 
     def driver_details(self):
         print("\n-- Driver Details --")
-        print(f"Driver ID    : {self.driver_id}")
-        print(f"User ID      : {self.user_id}")
-        print(f"Driver Name  : {self.username}")
+        print(f"Driver ID : {self.driver_id}")
+        print(f"User ID : {self.user_id}")
+        print(f"Driver Name : {self.username}")
         print(f"Phone Number : {self.phone}")
-        print(f"Email        : {self.email}")
+        print(f"Email  : {self.email}")
         print(f"Availability : {'Available' if self.available else 'Busy'}")
 
         if self.vehicle is not None:
